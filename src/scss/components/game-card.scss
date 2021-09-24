@@ -1,0 +1,154 @@
+.game-card {
+
+	$this: &;
+
+	position: relative;
+	padding-top: 100%;
+	overflow: hidden;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+	transition: box-shadow $transition;
+
+	&__image {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&::before {
+
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: #070707;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity $transition;
+		}
+
+		img {
+
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__button,
+	&__control {
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -40%);
+		opacity: 0;
+		z-index: 2;
+		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
+		transition: opacity $transition, transform $transition;
+	}
+
+	&__control {
+
+		display: grid;
+		gap: 16px;
+		top: auto;
+		bottom: 10%;
+		transform: translate(-50%, 20%);
+	}
+
+	&:hover {
+
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4),
+					0 0 0 3px #00B5FF;
+
+		#{$this}__image {
+
+			&::before {
+
+				opacity: 0.6;
+			}
+		}
+
+		#{$this}__control,
+		#{$this}__button {
+
+			opacity: 1;
+			transform: translate(-50%, -50%);
+		}
+
+		#{$this}__control {
+
+			transform: translate(-50%, -0%);
+		}
+	}
+}
+
+@media (max-width: 1199.98px){
+	
+
+}
+
+@media (max-width: 991.98px){
+
+	.game-card {
+
+		border-radius: 13px;
+		box-shadow: 0 0 0 4px #F8F2D4;
+
+		&__control {
+
+			gap: 8px;
+		}
+	}
+	
+}
+
+@media (max-width: 767.98px){
+	
+	.game-card {
+
+		border-radius: 12px;
+		box-shadow: 0 0 0 3px #F8F2D4;
+
+		
+	}
+	
+}
+
+@media (max-width: 575.98px){
+	
+	.game-card {
+
+		border-radius: 10px;
+		box-shadow: 0 0 0 3px #F8F2D4;
+	}
+}
+
+@media (max-width: 480.98px){
+
+	.game-card {
+
+		border-radius: 8px;
+		box-shadow: 0 0 0 2px #F8F2D4;
+	}
+	
+}
+
+@media (max-width: 374px){
+
+	.game-card {
+
+
+	}
+	
+}
+
+@media (max-width: 350px){
+	
+}
