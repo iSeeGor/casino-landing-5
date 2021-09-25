@@ -19,7 +19,6 @@
 	line-height: 1;
 	height: 46px;
 	background: transparent;
-	border-radius: 8px;
 	text-transform: uppercase;
 	padding: 0 48px;
 	display: flex;
@@ -180,17 +179,18 @@
 
 		&--large {
 
-			height: 84px;
-			border-radius: 28px;
-			font-size: 32px;
+			height: 54px;
+			border-radius: 8px;
+			font-size: 22px;
 		}
 	}
 
 	.button-play {
 
-		height: 110px;
-		width: 110px;
-		font-size: 18px;
+		height: 54px;
+		min-width: 170px;
+		font-size: 22px;
+		border-radius: 8px;
 	}
 }
 
@@ -201,13 +201,22 @@
 		font-size: 16px;
 		height: 42px;
 		padding: 0 36px;
+		border-radius: 6px;
 
 		&--large {
 
-			height: 68px;
-			border-radius: 20px;
-			font-size: 26px;
+			height: 52px;
+			border-radius: 8px;
+			font-size: 22px;
 		}
+	}
+
+	.button-play {
+
+		height: 46px;
+		min-width: 140px;
+		font-size: 18px;
+		border-radius: 6px;
 	}
 }
 
@@ -219,6 +228,7 @@
 		height: 38px;
 		padding: 0 32px;
 		box-shadow: 0 0 0 1px white;
+		border-radius: 4px;
 
 		&--transparent {
 
@@ -227,10 +237,18 @@
 
 		&--large {
 
-			height: 44px;
-			border-radius: 16px;
-			font-size: 18px;
+			height: 48px;
+			border-radius: 6px;
+			font-size: 20px;
 		}
+	}
+
+	.button-play {
+
+		height: 42px;
+		min-width: 120px;
+		font-size: 16px;
+		border-radius: 6px;
 	}
 }
 
@@ -244,10 +262,19 @@
 
 		&--large {
 
-			height: 38px;
-			border-radius: 14px;
-			font-size: 16px;
+			height: 48px;
+			border-radius: 6px;
+			font-size: 20px;
 		}
+
+	}
+
+	.button-play {
+
+		height: 38px;
+		min-width: 100px;
+		font-size: 14px;
+		border-radius: 4px;
 	}
 	
 }
@@ -261,16 +288,18 @@
 
 		&--large {
 
-			height: 60px;
-			border-radius: 24px;
-			font-size: 22px;
+			height: 48px;
+			border-radius: 6px;
+			font-size: 20px;
 		}
 	}
 
 	.button-play {
 
-		height: 94px;
-		width: 94px;
+		height: 44px;
+		min-width: 120px;
+		font-size: 18px;
+		border-radius: 6px;
 	}
 }
 
@@ -285,7 +314,7 @@
 		&--large {
 
 			height: 44px;
-			border-radius: 16px;
+			border-radius: 6px;
 			font-size: 18px;
 		}
 
@@ -297,9 +326,10 @@
 
 	.button-play {
 
-		width: 80px;
-		height: 80px;
+		height: 40px;
+		min-width: 100px;
 		font-size: 16px;
+		border-radius: 4px;
 	}
 }
 
@@ -314,16 +344,17 @@
 		&--large {
 
 			height: 44px;
-			border-radius: 12px;
-			font-size: 16px;
+			border-radius: 6px;
+			font-size: 18px;
 		}
 	}
 
 	.button-play {
 
-		width: 70px;
-		height: 70px;
-		font-size: 14px;
+		height: 38px;
+		min-width: 90px;
+		font-size: 16px;
+		border-radius: 4px;
 	}
 	
 }

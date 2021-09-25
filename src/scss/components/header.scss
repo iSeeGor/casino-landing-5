@@ -52,8 +52,7 @@
 
 		&__reg-text {
 
-			font-size: 18px;
-			line-height: 1.22;
+			font-size: 15px;
 		}
 
 		&__auth {
@@ -67,11 +66,11 @@
 	
 	.header {
 
-		padding: 12px 0 10px;
+		padding: 0;
 
 		&__reg-text {
 
-			font-size: 17px;
+			font-size: 14px;
 		}
 
 		&__auth {
@@ -84,17 +83,17 @@
 @media (max-width: 767.98px){
 	.header {
 
-		padding: 10px 0 10px;
+		padding: 0;
 
 		&__top,
 		&__bottom {
 
-			padding: 10px 0;
+			padding: 6px 0;
 		}
 
 		&__reg-text {
 
-			font-size: 14px;
+			font-size: 13px;
 			br {
 
 				display: none;
@@ -112,11 +111,11 @@
 	
 	.header {
 
-		padding: 8px 0 8px;
+		padding: 0;
 
 		&__reg-text {
 
-			display: none;
+			font-size: 12px;
 		}
 
 		&__auth {

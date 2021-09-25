@@ -4,6 +4,30 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 33px;
 	// padding: 0 34px;
+	padding-top: 20px;
+
+	@media (max-width: 1199.98px) {
+
+		gap: 16px;
+	}
+
+	@media (max-width: 991.98px){
+		
+		gap: 80px 34px;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+	}
+
+	@media (max-width: 767.98px){
+		
+		grid-template-columns: 330px;
+	}
+
+	@media (max-width: 374px){
+		
+		grid-template-columns: 1fr;
+		justify-content: center;
+	}
 }
 
 .bonus-box {

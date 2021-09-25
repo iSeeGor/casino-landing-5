@@ -3,6 +3,11 @@
 	background: $colorBlue;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.399312);
 	border-bottom: 5px solid $colorSky;
+
+	@media (max-width: 991.98px){
+		
+		border-bottom: 2px solid $colorSky;
+	}
 }
 
 .main-menu {
@@ -107,9 +112,7 @@
 
 	.menu-section {
 
-		padding: 4px 0;
-		border-top: 1px solid #fff;
-    	border-bottom: 1px solid #fff;
+		padding: 0;
 	}
 
 	.main-menu {
@@ -119,6 +122,7 @@
 			white-space: nowrap;
 			overflow-x: scroll;
 			justify-content: space-around;
+			padding-bottom: 4px;
 		}
 	
 		&__link {
@@ -146,7 +150,7 @@
 	}
 
 	::-webkit-scrollbar-thumb {
-		background-color: #e2dbb9;
+		background-color: #cee9ff;
 	}
 
 	::-webkit-scrollbar-track {
@@ -159,7 +163,7 @@
 
 	.menu-section {
 
-		padding: 2px 0;
+		padding: 0;
 	}
 
 	

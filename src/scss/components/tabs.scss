@@ -98,22 +98,25 @@
 	
 	.tabs {
 
+		padding: 22px 22px 40px 22px;
+		border-radius: 10px;
+
 		&__header {
 
-			margin-bottom: 30px;
+			margin-bottom: 26px;
+    		padding-bottom: 26px;
 		}
 
 		&__button {
-			font-size: 16px;
+			padding: 18px 0;
+			font-size: 22px;
 
 			&-icon {
 
-				height: 90px;
-				width: 90px;
-				padding: 26px 26px;
+				width: 30px;
+				height: 30px;
 			}
 		}
-		
 	}
 }
 
@@ -123,95 +126,114 @@
 
 		&__header {
 
-			padding-left: 0;
-			padding-right: 0;
+			margin-bottom: 22px;
+    		padding-bottom: 22px;
 		}
 
-
 		&__button {
+			padding: 14px 0;
+			font-size: 18px;
 
 			&-icon {
 
-				height: 80px;
-				width: 80px;
-				padding: 24px 24px;
+				width: 26px;
+				height: 26px;
 			}
-		}
-
-
-		&__content {
-
-			gap: 20px;
-			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 	
 }
 
 @media (max-width: 767.98px){
+	
 	.tabs {
 
-		&__button {
+		padding: 18px 18px 34px 18px;
+		border-radius: 8px;
 
-			font-size: 14px;
+		&__header {
+
+			margin-bottom: 24px;
+    		padding-bottom: 10px;
+			overflow-x: scroll;
+			border-bottom: 0;
+		}
+
+		&__button {
+			padding: 12px 16px;
+			font-size: 16px;
+
+			&:first-child {
+
+				padding-left: 0;
+			}
+
+			&:last-child {
+
+				padding-right: 0;
+			}
 
 			&-icon {
 
-				height: 70px;
-				width: 70px;
-				padding: 22px 22px;
-				border-radius: 15px;
+				width: 22px;
+				height: 22px;
+				margin-right: 6px;
 			}
 		}
 
-
 		&__content {
 
-			grid-template-columns: 1fr 1fr;
-			gap: 16px;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 14px;
 		}
 	}
 }
 
 @media (max-width: 575.98px){
-	
 
+	.tabs {
+
+		padding: 16px 16px 28px 16px;
+		border-radius: 6px;
+
+		&__button {
+
+			padding: 8px 14px;
+			font-size: 14px;
+
+			&-icon {
+
+				width: 18px;
+				height: 18px;
+				margin-right: 4px;
+			}
+		}
+	}
+	
 }
 
 @media (max-width: 480.98px){
 	
 	.tabs {
 
-		&__button {
+		&__content {
 
-			font-size: 13px;
-
-			&-icon {
-
-				height: 60px;
-				width: 60px;
-				padding: 16px 16px;
-				border-radius: 12px;
-			}
+			grid-template-columns: repeat(2, 1fr);
+			gap: 14px;
 		}
-
 	}
 }
 
 @media (max-width: 374px){
 	
 	.tabs {
+		
+		padding: 12px 12px 22px 12px;
+		border-radius: 6px;
 
-		&__button {
+		&__content {
 
-			font-size: 10px;
-
-			&-icon {
-
-				height: 54px;
-				width: 54px;
-				padding: 16px 16px;
-			}
+			gap: 12px;
 		}
 
 	}
@@ -223,20 +245,15 @@
 
 		&__button {
 
-			font-size: 9px;
+			padding: 6px 12px;
+			font-size: 12px;
 
 			&-icon {
 
-				height: 50px;
-				width: 50px;
-				padding: 14px 14px;
+				width: 14px;
+				height: 14px;
+				margin-right: 2px;
 			}
-		}
-
-
-		&__content {
-
-			gap: 14px;
 		}
 	}
 }
